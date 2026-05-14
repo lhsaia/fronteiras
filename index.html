@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural Fronteiras Invisíveis do Futebol</title>
+    <meta name="description" content="Mapa interativo dos episódios do podcast Fronteiras Invisíveis do Futebol.">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Outfit:wght@300;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mural-container">
+        <header class="main-header">
+            <h1>Fronteiras Invisíveis <span>do Futebol</span></h1>
+            <div class="header-credits">
+                por <strong>Filipe Figueiredo</strong> & <strong>Matias Pinto</strong>
+                <span class="divider">|</span>
+                <a href="https://www.central3.com.br/category/podcasts/fronteiras-invisiveis-do-futebol/"
+                    target="_blank" class="site-link">Visite o Site Oficial</a>
+            </div>
+        </header>
+
+        <div id="map-frame">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <!-- Audio Player Global (Opcional, pode ser no popup) -->
+    <div id="global-player" class="player-hidden">
+        <div class="player-content">
+            <span id="playing-title">Nenhum episódio selecionado</span>
+            <audio id="audio-element" controls></audio>
+            <button id="close-player">×</button>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
