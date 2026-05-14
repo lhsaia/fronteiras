@@ -317,13 +317,14 @@ audio {
 /* Responsive */
 @media (max-width: 768px) {
     body {
-        padding: 10px;
+        padding: 0; /* Remove padding here to avoid overflow with dvh */
     }
 
     .mural-container {
-        height: calc(100vh - 20px);
-        width: calc(100vw - 20px);
-        gap: 8px;
+        height: 100dvh; /* dynamic viewport height: accounts for URL bar */
+        width: 100vw;
+        padding: 10px;
+        gap: 6px;
     }
 
     .main-header h1 { 
