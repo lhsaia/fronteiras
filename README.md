@@ -32,4 +32,4 @@ Este é um projeto de fã para facilitar a descoberta de episódios deste excele
 Todos os direitos de áudio e imagem pertencem à **Central 3** e aos criadores **Filipe Figueiredo** e **Matias Pinto**.
 
 ---
-*Desenvolvido com ❤️ para a comunidade de ouvintes do Xadrez Verbal e Fronteiras Invisíveis.*
+*Desenvolvido para a comunidade de ouvintes do Xadrez Verbal e Fronteiras Invisíveis.*
