@@ -316,6 +316,68 @@ audio {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .main-header h1 { font-size: 1.8rem; }
-    .leaflet-popup-content { width: 220px !important; }
+    body {
+        padding: 10px;
+    }
+
+    .mural-container {
+        height: calc(100vh - 20px);
+        width: calc(100vw - 20px);
+        gap: 8px;
+    }
+
+    .main-header h1 { 
+        font-size: 1.4rem; 
+    }
+
+    .header-credits {
+        font-size: 0.75rem;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .header-credits a {
+        display: block;
+        margin-top: 4px;
+    }
+
+    #map-frame {
+        border-width: 4px;
+        padding: 5px;
+    }
+
+    .leaflet-popup-content { 
+        width: 240px !important; 
+    }
+
+    /* Player Mobile Fix */
+    #global-player {
+        width: 94vw;
+        padding: 10px 15px;
+        bottom: 10px;
+        border-radius: 15px;
+    }
+
+    .player-content {
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    #playing-title {
+        max-width: 80px;
+        font-size: 0.75rem;
+    }
+
+    audio {
+        flex: 1;
+        width: 100%;
+        min-width: 0;
+        height: 30px;
+    }
+
+    #close-player {
+        font-size: 1.2rem;
+    }
 }
