@@ -102,10 +102,7 @@ body {
     border-radius: 4px;
 }
 
-/* Filtro Estilo Stamen Toner */
-.leaflet-tile-pane {
-    filter: grayscale(100%) brightness(0.8) contrast(1.2) invert(100%);
-}
+
 
 /* Estilização do Alfinete (Pin) */
 .custom-pin {

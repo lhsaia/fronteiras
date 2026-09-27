@@ -6,11 +6,15 @@ const map = L.map('map', {
     maxBounds: [[-90, -180], [90, 180]]
 });
 
-// Camada de Mapa Base (Filtrada pelo CSS)
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; OpenStreetMap &copy; CARTO | Dev: Luis Cereda',
-    subdomains: 'abcd',
-    maxZoom: 20
+// Camada de Mapa Base (ESRI Dark Gray Canvas)
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ | Dev: Luis Cereda',
+    maxZoom: 16
+}).addTo(map);
+
+// Camada de Rótulos e Nomes
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 16
 }).addTo(map);
 
 // Elementos do Player Global
